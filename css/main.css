@@ -1,0 +1,644 @@
+html {
+  background-color: black;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+nav {
+  max-height: 49px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  padding: 15px;
+  z-index: 1;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: helvetica, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding-left: 5.5%;
+  padding-right: 5.5%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+nav .resources {
+  margin-right: 6%;
+}
+
+nav .videos {
+  margin-left: 6%;
+}
+
+nav a:hover {
+  color: #a6a6a6;
+}
+
+nav a:active {
+  color: darkgreen;
+}
+
+header {
+  margin-top: 49px;
+  position: relative;
+}
+
+header a {
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 100px;
+  top: 70%;
+  font-family: helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 5px;
+  font-size: 24px;
+  text-transform: uppercase;
+  height: 35px;
+  line-height: 1.5em;
+  text-decoration: none;
+  border-color: white;
+  border-width: medium;
+  border-style: solid;
+  left: 50%;
+  margin-left: -53px;
+  background-color: rgba(0, 0, 0, 0.72);
+}
+
+header a:hover {
+  color: lightgray;
+}
+
+header a:active {
+  color: tan;
+}
+
+header h1 {
+  position: absolute;
+  text-align: center;
+  color: white;
+  width: 100%;
+  top: 50%;
+  margin: 0;
+  font-family: helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 46px;
+  height: 48px;
+  letter-spacing: 7px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+header p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  top: 55%;
+  font-family: "Crimson Pro", Georgia, serif;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 25px;
+  height: 27px;
+}
+
+p a {
+  color: darkblue;
+  text-decoration: none;
+}
+
+p a:active {
+  color: red;
+}
+
+#quote {
+  margin-top: 70px;
+  font-family: "Roboto Slab", Georgia, serif;
+  text-align: center;
+  color: #757575;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+#title {
+  font-family: helvetica, sans-serif;
+  font-weight: 500;
+  margin-top: 48px;
+  padding: 80px;
+  text-align: center;
+  font-size: 46px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+#form {
+	font-family: helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font-size: 12px;
+	margin-top: 49px;
+  	position: relative;
+  	text-align: center;
+  	padding-top: 15%;
+  	padding-bottom: 15%;
+}
+
+#form h1 {
+	font-family: helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+#form input {
+	margin-bottom: 10px;
+	padding: 6px;
+}
+
+#form button {
+	margin-top: 15px;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	text-align: inherit;
+	color: white;
+	background-color: black;
+	border: none;
+	padding: 10px;
+}
+
+#form button:hover {
+	cursor: pointer;
+	color: lightgray;
+}
+
+#form button:focus {
+	outline: none;
+}
+
+#vid-container {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 82.5%;
+}
+
+#vid-container iframe {
+  padding: 15px;
+}
+
+#map {
+  width: 60%;
+  margin: 0 15%;
+  margin-bottom: 80px;
+}
+
+.vid-description {
+  margin: 0;
+  width: 49.83%;
+  display: inline-block;
+}
+
+.vid-description p {
+  width: 100%;
+  text-align: center;
+  margin: inherit;
+  font-family: helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.author {
+  text-align: right;
+  margin-right: 10%;
+  margin-bottom: 70px;
+}
+
+.first-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+  width: 70%;
+  display: block;
+  background-image: url("https://i.imgur.com/cDTBwX4.jpg");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.first-img:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.first-img:hover {
+  filter:grayscale(0.8);
+}
+
+.second-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+  width: 30%;
+  display: block;
+  background-image: url("https://i.imgur.com/ctSSkZQ.jpg");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.second-img:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.second-img:hover {
+  filter:grayscale(0.8);
+}
+
+.third-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+  width: 40%;
+  display: block;
+  background-image: url("https://i.imgur.com/wfEN43L.jpg");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.third-img:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.third-img:hover {
+  filter:grayscale(0.8);
+}
+
+.fourth-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+  width: 60%;
+  display: block;
+  background-image: url("https://i.imgur.com/5Qn8iEu.jpg");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.fourth-img:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.fourth-img:hover {
+  filter:grayscale(0.8);
+}
+
+.fifth-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+  width: 52.5%;
+  display: block;
+  background-image: url("https://i.imgur.com/oj83VdV.jpg");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.fifth-img:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.fifth-img:hover {
+  filter:grayscale(0.8);
+}
+
+.sixth-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+  width: 47.5%;
+  display: block;
+  background-image: url("https://i.imgur.com/OaLbgZH.jpg");
+  background-size: cover;
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.sixth-img:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.sixth-img:hover {
+  filter:grayscale(0.8);
+}
+
+.text {
+  font-weight: 500;
+  font-size: 40px;
+  margin-top: 220px;
+  color: white;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.left-img {
+  float: left;
+  max-height: 500px;
+  min-height: 500px;
+}
+
+.right-img {
+  float: right;
+  max-height: 500px;
+  min-height: 500px;
+}
+
+ul.share-buttons{
+  list-style: none;
+  padding: 0;
+}
+
+ul.share-buttons li{
+  display: inline;
+}
+
+ul.share-buttons .sr-only{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+#blog {
+  width: 78%;
+  margin: 70px auto;
+  font-family: "Roboto Slab", Georgia, serif;
+  color: #757575;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+#logo {
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  margin-left: -24.5px;
+  padding: 5px;
+  top: 0;
+}
+
+#explore {
+  font-family: helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#down-arrow-icon {
+  margin-bottom: 20px;
+}
+
+#explore h2 {
+  font-weight: 500;
+  font-size: 42px;
+  height: 44px;
+  letter-spacing: 7px;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+#comment-form {
+	clear: both;
+	font-family: helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+.name {
+	padding-bottom: 3.5%;
+}
+
+.fname {
+	float: left;
+	width: 49.25%;
+}
+
+.lname {
+	float: right;
+	width: 49.25%;
+}
+
+.name input {
+	width: 99%;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.name input:focus {
+	outline: none;
+}
+
+.comment {
+	clear: both;
+	width: 99.5%;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	letter-spacing: inherit;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-bottom: 40px;
+	margin-bottom: 10px;
+	border-color: lightgray;
+}
+
+.comment:focus {
+	outline: none;
+}
+
+#comment-form button {
+	float:right;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-transform: inherit;
+	letter-spacing: inherit;
+	text-align: inherit;
+	color: white;
+	background-color: black;
+	border: none;
+	padding: 10px;
+}
+
+#comment-form button:hover {
+	cursor: pointer;
+	color: lightgray;
+}
+
+#comment-form button:focus {
+	outline: none;
+}
+
+.login {
+	padding-left: 5px;
+	float: left;
+	color: black;
+	text-decoration: none;
+}
+
+.login:hover {
+	color: darkgreen;
+}
+
+#comments {
+	clear: both;
+	font-family: helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: 200;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+#comments h2 {
+	font-family: inherit;
+	font-weight: 500;
+  	font-size: 42px;
+  	height: 44px;
+  	letter-spacing: 7px;
+  	overflow: hidden;
+  	text-transform: inherit;
+  	padding: 40px;
+  	margin-top: 0px;
+}
+
+.user {
+	padding: 10px;
+	padding-bottom: 25px;
+	text-align: left;
+	font-size: 16px;
+}
+
+.user b {
+	font-weight: 400;
+}
+
+.user a {
+	float: right;
+	color: darkred;
+	text-decoration: none;
+}
+
+.comment_text {
+	padding: 15px;
+	padding-left: 30px;
+  	color: #757575;
+  	font-size: 16px;
+	line-height: 2;
+	text-transform: none;
+}
+
+#share {
+  clear: both;
+  font-family: helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#profile {
+  width: 30%;
+  float: left;
+  margin-bottom: 20px;
+  margin-left: 60px;
+  border-radius: 15px;
+}
+
+#profile-desc {
+  float: right;
+  text-align: center;
+  margin-right: 60px;
+  width: 58%;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #757575;
+  line-height: 2.0;
+}
+
+#subnote {
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  clear: both;
+  width: 30%;
+  margin-left: 60px;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+#subnote .name {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: black;
+  text-align: center;
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  color: #757575;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
