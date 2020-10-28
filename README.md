@@ -14,16 +14,16 @@ Simple website I made to showcase my travel experiences in Banff and Jasper.
 
 <table>
   <tr>
-    <td><img src="/assets/1.PNG"></td>
-    <td><img src="/assets/2.PNG"></td>
+    <td><img src="/assets/1.png"></td>
+    <td><img src="/assets/2.png"></td>
   </tr>
   <tr>
-    <td><img src="/assets/3.PNG"></td>
-    <td><img src="/assets/4.PNG"></td>
+    <td><img src="/assets/3.png"></td>
+    <td><img src="/assets/4.png"></td>
   </tr>
   <tr>
-    <td><img src="/assets/5.PNG"></td>
-    <td><img src="/assets/6.PNG"></td>
+    <td><img src="/assets/5.png"></td>
+    <td><img src="/assets/6.png"></td>
   </tr>
 </table>
 
